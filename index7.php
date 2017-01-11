@@ -6,22 +6,30 @@
 </head>
 <body>
 	
-<form action="user5.php" method="POST">
+	<?php 
+	if (empty($_POST)){
+		?>
 
-		<SELECT name="genre" >
-		<OPTION>Mr
-		<OPTION>Mme
-		<OPTION>Mlle
-		</SELECT>
+		<form action="index7.php" method="POST">
 
-		<label for="">Nom</label>
-		<input type="text" name="Nom">
-		<label for="">Prénom </label>
-		<input type="text" name ="Prenom">
-		<input type="file" name="submit" value="Valide">
-		<input type="submit" name="submit" value="Valider">
+			<SELECT name="genre" >
+				<OPTION>Mr
+					<OPTION>Mme
+						<OPTION>Mlle
+						</SELECT>
 
-	</form> 
+						<label for="">Nom</label>
+						<input type="text" name="Nom">
+						<label for="">Prénom </label>
+						<input type="text" name ="Prenom">
+						<input type="file" name="file" value="Valide">
+						<input type="submit" name="submit" value="Valider">
 
-</body>
-</html>
+					</form> 
+
+					<?php 
+				}
+				echo $_POST['genre']." ".$_POST['Nom']." ".$_POST['Prenom']." ".$_POST['file'];
+				?>
+			</body>
+			</html>
