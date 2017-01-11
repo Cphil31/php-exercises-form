@@ -11,7 +11,7 @@
 		<label for="">Nom</label>
 		<input type="text" name="Nom">
 		<label for="">Prénom </label>
-		<input type="text" name ="Prénom">
+		<input type="text" name ="Prenom">
 		<input type="submit" name="submit" value="Valider">
 
 	</form>
