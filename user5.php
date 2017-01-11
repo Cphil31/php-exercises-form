@@ -1,3 +1,3 @@
 <?php 
-echo "Bonjour ".htmlspecialchars($_POST['genre'])." ".htmlspecialchars($_POST['Nom'])." ".htmlspecialchars($_POST['Prenom']);
+echo "Bonjour ".$_POST['genre']." ".$_POST['Nom']." ".$_POST['Prenom'];
  ?>
